@@ -79,7 +79,6 @@ class AudioService extends ChangeNotifier {
     _playbackRate = rate;
 
     if (wasPlaying) {
-      await _audioPlayer.resume();
       await _audioPlayer.setPlaybackRate(_playbackRate);
     }
 
